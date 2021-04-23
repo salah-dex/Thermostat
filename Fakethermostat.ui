@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fakethermostat</class>
+ <widget class="QMainWindow" name="Fakethermostat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>416</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>171</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="1" column="0" colspan="2">
+      <widget class="QDoubleSpinBox" name="targetTempRatureDoubleSpinBox">
+       <property name="suffix">
+        <string>C°</string>
+       </property>
+       <property name="minimum">
+        <double>-25.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>40.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="targetTempRatureLabel">
+       <property name="text">
+        <string>           Target Température</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>100</y>
+      <width>171</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="2" column="0" colspan="2">
+      <widget class="QDoubleSpinBox" name="tempRatureDoubleSpinBox">
+       <property name="suffix">
+        <string>C°</string>
+       </property>
+       <property name="minimum">
+        <double>-25.000000000000000</double>
+       </property>
+       <property name="maximum">
+        <double>40.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="tempRatureLabel">
+       <property name="text">
+        <string>                   Température</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>171</width>
+      <height>44</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_3">
+     <item row="1" column="0" colspan="2">
+      <widget class="QSpinBox" name="humiditeSpinBox">
+       <property name="suffix">
+        <string>%</string>
+       </property>
+       <property name="prefix">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="humiditeLabel">
+       <property name="text">
+        <string>                    Humidite</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="formLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>230</y>
+      <width>174</width>
+      <height>43</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout_4">
+     <item row="0" column="0">
+      <widget class="QLabel" name="modeConfigurationLabel">
+       <property name="text">
+        <string>Mode Configuration</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QComboBox" name="modeConfigurationComboBox">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <item>
+        <property name="text">
+         <string>Automatic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Manual</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>416</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
